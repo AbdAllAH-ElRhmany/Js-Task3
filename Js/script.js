@@ -108,7 +108,7 @@ function openingFormLoading(){
         form.style.display = 'block';
     }, 3000); 
     let title = company.find(item => item.id == companyId);
-    formTitle.innerHTML += title.title;
+formTitle.innerHTML = `The Work Application For ${title.title}`;
 }
 
 applyForm.addEventListener('submit', submitTheApplication);
